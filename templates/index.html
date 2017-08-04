@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Counter</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='counter-style.css') }}">
+    </head>
+    <body>
+        <div class="wrapper">
+            <h1>COUNTER</h1>
+            <p>{{session['counter']}} time(s)</p>
+            <a href="/level1">+2</a>
+            <a href="/reset" value="Reset">Reset</a>
+        </div>
+    </body>
+</html>
